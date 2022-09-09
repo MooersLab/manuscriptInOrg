@@ -3,5 +3,4 @@
 This is an org-mode variant of the main.tex file in the MooersLab/manuscriptInLaTeX [repo](https://github.com/MooersLab/manuscriptInLaTeX).
 
 Git clone the repo and open the main.org file in Emacs.
-Enter `C-c C-e l o` to compile and open the PDF.
-
+Enter `C-c C-e l o` to compile and open the resulting PDF in your default PDF viewer.
