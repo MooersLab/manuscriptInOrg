@@ -25,6 +25,7 @@ Compiling tex files in Overleaf is faster.
 Compiling takes several seconds on a 2018 MacBook Pro with 32 GB of RAM. 
 There is a better way. 
 The correpsonding LaTeX compiles faster in Overleaf, which also provides superior support for collaborative editing by non-LaTeX using colleagues.
+The latter is a deficiency in Emacs that some of working hard to address.
 Sadly, Overleaf does not read org files.
 
 ## Postscript Oct 10, 2022
