@@ -20,7 +20,7 @@ The correpsonding LaTeX compiles faster in Overleaf, which also provides superio
 Sadly, Overleaf does not read org files.
 
 ## Postscript Oct 10, 2022
-My approach was developed independently of another [[https://github.com/fangohr/template-latex-paper-from-orgmode/issues/4][solution]] found here. 
+My approach was developed independently of another [solution](https://github.com/fangohr/template-latex-paper-from-orgmode/issues/4) found here. 
 
 ## Related sites
 
