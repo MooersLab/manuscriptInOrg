@@ -49,3 +49,5 @@ My approach was developed independently of another [solution](https://github.com
 - [Slides from talk about GhostText, Data Science Workshop, July 2022](https://github.com/MooersLab/DSW22ghosttext)
 - [Video link to talk about GhostText, Data Science Workshop, July 2022](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d)
 - [The writer's law](https://github.com/MooersLab/thewriterslaw)
+
+Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has fuctions for converting LaTex lists into org-markdown lists.
