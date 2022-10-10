@@ -15,9 +15,9 @@ Compiling tex files in Overleaf is faster.
 
 ## Installation
 
-1. Git clone the repo ~git clone ~.
+1. Git clone the repo ~git clone https://github.com/MooersLab/manuscriptInOrg.git~.
 2. Copy main.org to a your project folder.
-3. Load main.org file in Emacs via the File pulldown or `C-x C-f`.
+3. Load main.org file in Emacs via the File pulldown menu or `C-x C-f`.
 4. Edit the file to customize to your manuscript.
 5. Edit the paths to your global.bib file and your image files.
 6. Enter `C-c C-e l o` to compile and open the resulting PDF in your default PDF viewer.
