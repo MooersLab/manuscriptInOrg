@@ -5,13 +5,16 @@ It is silly to submit the manuscript as if it were a galley proof at this stage.
 The advantage of a plain generic template is that it can be submitted to many different journals.
 
 This is an org-mode variant of the main.tex file in the MooersLab/manuscriptInLaTeX [repo](https://github.com/MooersLab/manuscriptInLaTeX).
-This template is for people who must write research papers in org.
+This template is for people who prefer to write research papers in org.
 The support for writing in LaTeX in Emacs is also excellent.
 
-You can also edit LaTeX documents store on Overleaf inside Emacs via GhostText.
+You can edit LaTeX documents stored on Overleaf inside Emacs via GhostText.
 See slides here [here](https://github.com/MooersLab/DSW22ghosttext) and video [here](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
 This brings the full power of Emacs to Overleaf.
 Compiling tex files in Overleaf is faster.
+
+An alternative approach to collaborative editing would be to do the editing on a private Github repo.
+GhostText enables the 
 
 ## Installation
 
