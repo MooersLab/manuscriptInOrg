@@ -28,8 +28,16 @@ The correpsonding LaTeX compiles faster in Overleaf, which also provides superio
 The latter is a deficiency in Emacs that some of working hard to address.
 Sadly, Overleaf does not read org files.
 
+## Assumptions
+
+1. LaTeX is installed with all of the required style files. I found my installation to be missing the **breakcites.sty** file. I installed this with the ``sudo port install texlive-bibtex-extra`` command.
+2. Emacs is using used to edit the org file.
+
 ## Postscript Oct 10, 2022
 My approach was developed independently of another [solution](https://github.com/fangohr/template-latex-paper-from-orgmode/issues/4) found here. 
+
+## Postscript May 16, 2023
+I had upgraded my operating system to Ventura. I had not migrated my macports properly. I found that I was missing the breakcites.sty file.
 
 ## Related sites
 
