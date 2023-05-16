@@ -19,9 +19,9 @@ Compiling tex files in Overleaf is faster.
 ### Editing via GhostTex on GitHub
 An alternative approach to collaborative editing is to do the editing on a private Github repo.
 GhostText enables editing of the text in the text area when in the edit mode on Github. 
-Confer Atomic to open files from Github in org-mode.
+Confuigure Atomic to cause Emacs to open org files from Github in org-mode.
 This approach assumes that all of the collaborators are using Emacs to do their editing.
-The non-Emacs users could just use the editing tools in GitHub to edit the file directly.
+The non-Emacs users could just use the editing tools in GitHub to edit the file directly or you might be able to cofigure their editors to open org files via GhostText.
 
 ## Installation
 
