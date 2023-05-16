@@ -8,13 +8,20 @@ This is an org-mode variant of the main.tex file in the MooersLab/manuscriptInLa
 This template is for people who prefer to write research papers in org.
 The support for writing in LaTeX in Emacs is also excellent.
 
-You can edit LaTeX documents stored on Overleaf inside Emacs via GhostText.
+## Edit on-line in your favorite text editor
+### Editing via GhostTex on Overleaf
+You can edit LaTeX documents stored on Overleaf inside Emacs or a half dozen other text editors via GhostText.
 See slides here [here](https://github.com/MooersLab/DSW22ghosttext) and video [here](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
+Note that I configured the Emacs Atomic package to open files from Overleaf in the LaTeX mode.
 This brings the full power of Emacs to Overleaf.
 Compiling tex files in Overleaf is faster.
 
-An alternative approach to collaborative editing would be to do the editing on a private Github repo.
-GhostText enables the 
+### Editing via GhostTex on GitHub
+An alternative approach to collaborative editing is to do the editing on a private Github repo.
+GhostText enables editing of the text in the text area when in the edit mode on Github. 
+Confer Atomic to open files from Github in org-mode.
+This approach assumes that all of the collaborators are using Emacs to do their editing.
+The non-Emacs users could just use the editing tools in GitHub to edit the file directly.
 
 ## Installation
 
