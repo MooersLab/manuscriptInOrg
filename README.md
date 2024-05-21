@@ -22,10 +22,10 @@ Compiling tex files in Overleaf is faster.
 
 ### Editing via GhostTex on GitHub
 An alternative approach to collaborative editing is to do the editing on a private Github repo.
-GhostText enables editing of the text in the text area when in the edit mode on Github. 
-Confuigure Atomic to cause Emacs to open org files from Github in org-mode.
+GhostText enables text editing in the text area when in the edit mode on Github. 
+Configure Atomic to cause Emacs to open org files from Github in org mode.
 This approach assumes that all of the collaborators are using Emacs to do their editing.
-The non-Emacs users could just use the editing tools in GitHub to edit the file directly or you might be able to cofigure their editors to open org files via GhostText.
+Non-Emacs users could just use the editing tools in GitHub to edit the file directly, or you might be able to configure their editors to open org files via GhostText.
 
 ## Installation
 
@@ -38,20 +38,20 @@ The non-Emacs users could just use the editing tools in GitHub to edit the file 
 
 Compiling takes several seconds on a 2018 MacBook Pro with 32 GB of RAM. 
 There is a better way. 
-The correpsonding LaTeX compiles faster in Overleaf, which also provides superior support for collaborative editing by non-LaTeX using colleagues.
+The corresponding LaTeX compiles faster in Overleaf, providing superior support for collaborative editing by non-LaTeX using colleagues.
 The latter is a deficiency in Emacs that some of working hard to address.
 Sadly, Overleaf does not read org files.
 
 ## Assumptions
 
-1. LaTeX is installed with all of the required style files. I found my installation to be missing the **breakcites.sty** file. I installed this with the ``sudo port install texlive-bibtex-extra`` command.
+1. LaTeX is installed with all of the required style files. However, my installation was missing the **break cities.sty** file. I installed this with the ``sudo port install texlive-bibtex-extra`` command.
 2. Emacs is using used to edit the org file.
 
 ## Postscript Oct 10, 2022
 My approach was developed independently of another [solution](https://github.com/fangohr/template-latex-paper-from-orgmode/issues/4) found here. 
 
 ## Postscript May 16, 2023
-I had upgraded my operating system to Ventura. I had not migrated my macports properly. I found that I was missing the breakcites.sty file.
+I had upgraded my operating system to Ventura, but I had not properly migrated my MacPorts. I found that I was missing the breakcities.sty file.
 
 ## Related sites
 
