@@ -72,17 +72,14 @@ I had upgraded my operating system to Ventura. I had not migrated my macports pr
 - [Video link to talk about GhostText, Data Science Workshop, July 2022](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d)
 - [The writer's law](https://github.com/MooersLab/thewriterslaw)
 
-Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has fuctions for converting LaTex lists into org-markdown lists.
-
-
-
+Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has functions for converting LaTex lists into org-markdown lists.
 
 
 ## Update history
 
-|Version      | Changes                                                                                                                                                                         | Date                 |
+|Version      | Changes                                                                                                                                    | Date                 |
 |:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
-| Version 0.2 |   Added badges, funding, and update table.                                                                                                                  | 2024 May 18          |
+| Version 0.2 |   Added badges, funding, and update table.                                                                                                 | 2024 May 21          |
 
 
 ## Sources of funding
