@@ -69,8 +69,8 @@ I enclosed the abstract in the \emph{singlespace} environment.
 
 * Introduction
 
-% The Introduction is not a literature review.
-% That is a separate class manuscript.
+# % The Introduction is not a literature review.
+# % That is a separate class manuscript.
 
 The first paragraph defines the scope of the problem and why it is important.
 It might cite several key contributions in the area \cite{Acharya2011SolvingProbabilisticProgrammingProblemsInvolvingMultiChoiceParameters, Luft2007EfficientOptimizationOfCrystallizationConditionsByManipulationOfDropVolumeRatioAndTemperature}.
