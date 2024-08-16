@@ -4,8 +4,8 @@
 #+LaTeX_CLASS_OPTIONS: [11pt,letterpaper]
 # #+LaTeX_HEADER: \author{author name}
 # #+LaTeX_HEADER: \affiliation{author affiliation}
-%% \documentclass[11pt,letterpaper]{article}
-% draft is an option for the documentclass but it buys us nothing here. It only inhibits the importing of images.
+# %% \documentclass[11pt,letterpaper]{article}
+# % draft is an option for the documentclass but it buys us nothing here. It only inhibits the importing of images.
 #+LaTeX_HEADER:\usepackage{minted}
 #+LaTeX_HEADER:\usepackage{booktabs}
 #+LaTeX_HEADER:\usepackage{graphicx}
