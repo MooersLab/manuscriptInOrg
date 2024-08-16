@@ -229,31 +229,31 @@ It is also possible to have tables oriented in the landscape orientation via the
 
 #+LaTeX:\newpage
 
-\begin{table}[htp]
-  \centering
-  \caption{\label{tab:first} My summary statistics in the default LaTeX table. Dummy data.}
-\begin{tabular}{lllll}\hline
- Parameter & Group A & Group B & Group C &  Group D \\ \hline
- Length ($\mu$m) & 100 & 150 & 175 &  250\\
- Weight (ng)  &  10 &  50 & 40  &  50\\
- Density (g/m) & 0.01  & 0.03  &  0.09 &  0.77\\ \hline
-\end{tabular}
-\end{table}
+#+LaTeX: \begin{table}[htp]
+#+LaTeX:  \centering
+#+LaTeX:  \caption{\label{tab:first} My summary statistics in the default LaTeX table. Dummy data.}
+#+LaTeX:\begin{tabular}{lllll}\hline
+#+LaTeX: Parameter & Group A & Group B & Group C &  Group D \\ \hline
+#+LaTeX: Length ($\mu$m) & 100 & 150 & 175 &  250\\
+#+LaTeX: Weight (ng)  &  10 &  50 & 40  &  50\\
+#+LaTeX: Density (g/m) & 0.01  & 0.03  &  0.09 &  0.77\\ \hline
+#+LaTeX:\end{tabular}
+#+LaTeX:\end{table}
 
 
 #+LaTeX:\newpage
 
 
-\begin{table}[htp]
-  \centering
-  \caption{\label{tab:second} My summary statistics made with the booktabs package. Dummy data.}
-\begin{tabular}{lllll}\toprule % l c and r control the alignment f the text in the table fields
- Parameter & Group A & Group B & Group C &  Group D \\ \midrule
- Length ($\mu$m) & 100 & 150 & 175 &  250\\
- Weight (ng)  &  10 &  50 & 40  &  50\\
- Density (g/m) & 0.01  & 0.03  &  0.09 &  0.77\\ \bottomrule
-\end{tabular}
-\end{table}
+#+LaTeX:\begin{table}[htp]
+#+LaTeX:  \centering
+#+LaTeX:  \caption{\label{tab:second} My summary statistics made with the booktabs package. Dummy data.}
+#+LaTeX:\begin{tabular}{lllll}\toprule % l c and r control the alignment f the text in the table fields
+#+LaTeX: Parameter & Group A & Group B & Group C &  Group D \\ \midrule
+#+LaTeX: Length ($\mu$m) & 100 & 150 & 175 &  250\\
+#+LaTeX: Weight (ng)  &  10 &  50 & 40  &  50\\
+#+LaTeX: Density (g/m) & 0.01  & 0.03  &  0.09 &  0.77\\ \bottomrule
+#+LaTeX:\end{tabular}
+#+LaTeX:\end{table}
 
 
 #+LaTeX:\newpage
@@ -262,9 +262,9 @@ One figure per page.
 
 #+LaTeX:\newpage
 
-\begin{figure}[htp]
-  \begin{center}
-  \includegraphics[width=3.25in]{./figs/wcPlot}
-  \caption{\label{fig:labelA} This beautiful graph relates X to Y. }
-  \end{center}
-\end{figure}
+#+LaTeX:\begin{figure}[htp]
+#+LaTeX:  \begin{center}
+#+LaTeX:  \includegraphics[width=3.25in]{./figs/wcPlot}
+#+LaTeX:  \caption{\label{fig:labelA} This beautiful graph relates X to Y. }
+#+LaTeX:  \end{center}
+#+LaTeX:\end{figure}
