@@ -1,7 +1,7 @@
 #+TITLE: Generic Manuscript Template
 #+OPTIONS: toc:nil author:nil
-#+LaTeX_CLASS: article
-#+LaTeX_CLASS_OPTIONS: [11pt,letterpaper]
+#+LaTeX_CLASS: article 
+#+LaTeX_CLASS_OPTIONS: [11pt,apalike,letterpaper] % apalike in used by the cell bibliography sytle
 # #+LaTeX_HEADER: \author{author name}
 # #+LaTeX_HEADER: \affiliation{author affiliation}
 # %% \documentclass[11pt,letterpaper]{article}
@@ -34,10 +34,10 @@
 #+LaTeX_HEADER:\usepackage{helvet}
 #+LaTeX_HEADER:\renewcommand{\familydefault}{\sfdefault}
 #+LaTeX_HEADER:\modulolinenumbers[1]
-#+LaTeX_HEADER:% Remove brackets from numbering in List of References
-#+LaTeX_HEADER:\makeatletter
-#+LaTeX_HEADER:\renewcommand{\@biblabel}[1]{\quad#1.}
-#+LaTeX_HEADER:\makeatother
+# #+LaTeX_HEADER:% Remove brackets from numbering in List of References
+# #+LaTeX_HEADER:\makeatletter
+# #+LaTeX_HEADER:\renewcommand{\@biblabel}[1]{\quad#1.}
+# #+LaTeX_HEADER:\makeatother
 #+LaTeX_HEADER:\title{Generic Manuscript Template}
 #+LaTeX_HEADER:\author[1]{Graduate Student}
 #+LaTeX_HEADER:\author[2]{Senior Collaborator}
