@@ -88,7 +88,7 @@ Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has fu
 ## Update history
 
 |Version      | Changes                                                                                                                                    | Date                 |
-|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
+|:-----------|:------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|
 | Version 0.2 |   Added badges, funding, and update table.                                                                                                 | 2024 May 21          |
 | Version 0.3 |   Updated main.org so it can compile without configuration from an init.el file.                                                           | 2024 August 18       |
 
