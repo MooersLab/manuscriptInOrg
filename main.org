@@ -1,10 +1,7 @@
 #+TITLE: Generic Manuscript Template
 #+OPTIONS: toc:nil author:nil
 #+LaTeX_CLASS: article 
-#+LaTeX_CLASS_OPTIONS: [11pt,apalike,letterpaper] % apalike in used by the cell bibliography sytle
-# #+LaTeX_HEADER: \author{author name}
-# #+LaTeX_HEADER: \affiliation{author affiliation}
-# %% \documentclass[11pt,letterpaper]{article}
+#+LaTeX_CLASS_OPTIONS: [11pt,apalike,letterpaper] % apalike in used by the cell bibliography style
 # % draft is an option for the documentclass but it buys us nothing here. It only inhibits the importing of images.
 #+LaTeX_HEADER:\usepackage{minted}
 #+LaTeX_HEADER:\usepackage{booktabs}
@@ -38,7 +35,7 @@
 # #+LaTeX_HEADER:\makeatletter
 # #+LaTeX_HEADER:\renewcommand{\@biblabel}[1]{\quad#1.}
 # #+LaTeX_HEADER:\makeatother
-#+LaTeX_HEADER:\title{Generic Manuscript Template}
+#+LaTeX_HEADER:\setlength{\parindent}{0pt} % Remove automatic indent of paragraphs.
 #+LaTeX_HEADER:\author[1]{Graduate Student}
 #+LaTeX_HEADER:\author[2]{Senior Collaborator}
 #+LaTeX_HEADER:\author[3]{Staff Scientist}
