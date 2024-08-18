@@ -1,31 +1,40 @@
-![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.2&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.3&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
 # Manuscript template in org for the first submission 
 
+## Background
 The first submission of a research paper for peer review can be in a generic format as a PDF.
 It is silly to submit the manuscript as if it were a galley proof at this stage.
 The advantage of a plain generic template is that it can be submitted to many different journals.
 
 This is an org-mode variant of the main.tex file in the MooersLab/manuscriptInLaTeX [repo](https://github.com/MooersLab/manuscriptInLaTeX).
-This template is for people who prefer to write research papers in org.
-The support for writing in LaTeX in Emacs is also excellent.
+This template is for people who prefer to write research papers in org because they do a lot of their other work in org and do not want to switch context to LaTeX.
+Org supports easy shuffling of document subtrees and easy table generation.
+You can integrate manuscript writing with org-agenda and org-roam more efficiently by staying in org-mode.
 
-## Edit on-line in your favorite text editor
-### Editing via GhostTex on Overleaf
-You can edit LaTeX documents stored on Overleaf inside Emacs or a half dozen other text editors via GhostText.
-See slides here [here](https://github.com/MooersLab/DSW22ghosttext) and video [here](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
-Note that I configured the Emacs Atomic package to open files from Overleaf in the LaTeX mode.
-This brings the full power of Emacs to Overleaf.
-Compiling tex files in Overleaf is faster.
+## Sample title page
 
-### Editing via GhostTex on GitHub
-An alternative approach to collaborative editing is to do the editing on a private Github repo.
-GhostText enables text editing in the text area when in the edit mode on Github. 
-Configure Atomic to cause Emacs to open org files from Github in org mode.
-This approach assumes that all of the collaborators are using Emacs to do their editing.
-Non-Emacs users could just use the editing tools in GitHub to edit the file directly, or you might be able to configure their editors to open org files via GhostText.
+![Screenshot 2024-08-18 at 6 40 00 AM](https://github.com/user-attachments/assets/fbc7cbb8-4711-427b-864d-569178196adb)
+
+## Sample second page
+
+![Screenshot 2024-08-18 at 7 36 46 AM](https://github.com/user-attachments/assets/01615879-aee2-41e7-ae65-f3ca1619ac9b)
+
+
+## Default Features
+
+- line numbers
+- block paragraphs
+- blank lines between paragraphs
+- narrow margins to conserve paper in drafts
+- single-spaced abstract
+- double-spaced one text
+- wrapping of sentences written one per line for sane version control
+- Helvetica font
+- paper numbers in the upper righthand corner
+
 
 ## Installation
 
@@ -37,10 +46,11 @@ Non-Emacs users could just use the editing tools in GitHub to edit the file dire
 6. Enter `C-c C-e l o` to compile and open the resulting PDF in your default PDF viewer.
 
 Compiling takes several seconds on a 2018 MacBook Pro with 32 GB of RAM. 
-There is a better way. 
-The corresponding LaTeX compiles faster in Overleaf, providing superior support for collaborative editing by non-LaTeX using colleagues.
-The latter is a deficiency in Emacs that some of working hard to address.
-Sadly, Overleaf does not read org files.
+Org-mode is built into recent versions of Emacs. 
+The main.org file will compile to the final PDF without any configuration.
+Try `emacs -Q main.org` and then enter `C-c C-e l o`. 
+The PDF will open in your default PDF viewer.
+
 
 ## Assumptions
 
@@ -81,7 +91,7 @@ Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has fu
 |Version      | Changes                                                                                                                                    | Date                 |
 |:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
 | Version 0.2 |   Added badges, funding, and update table.                                                                                                 | 2024 May 21          |
-
+| Version 0.3 |   Updated main.org so it can compile without configuration from an init.el file.                                                           | 2024 August 18       |
 
 ## Sources of funding
 
