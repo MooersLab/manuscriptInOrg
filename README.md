@@ -6,7 +6,6 @@
 
 ## Background
 The first submission of a research paper for peer review can be in a generic format as a PDF.
-It is silly to submit the manuscript as if it were a galley proof at this stage.
 The advantage of a plain generic template is that it can be submitted to many different journals.
 
 This is an org-mode variant of the main.tex file in the MooersLab/manuscriptInLaTeX [repo](https://github.com/MooersLab/manuscriptInLaTeX).
@@ -33,7 +32,7 @@ You can integrate manuscript writing with org-agenda and org-roam more efficient
 - double-spaced one text
 - wrapping of sentences written one per line for sane version control
 - Helvetica font
-- paper numbers in the upper righthand corner
+- paper numbers in the upper right hand corner
 
 
 ## Installation
@@ -54,9 +53,9 @@ The PDF will open in your default PDF viewer.
 
 ## Assumptions
 
-1. LaTeX is installed with all of the required style files. However, my installation was missing the **break cities.sty** file. I installed this with the ``sudo port install texlive-bibtex-extra`` command.
+1. LaTeX is installed with all of the required style files. However, my installation was missing the **break cities.sty** file. I installed this with the `sudo port install texlive-bibtex-extra` command.
 2. Emacs is using used to edit the org file.
-3. You will use the LaTeX cite command and let LaTeX handle the generation of the literature cited section. This is the citar and so on can help with finding the right citekey.
+3. You will use the LaTeX cite command and let LaTeX handle the generation of the literature cited section. This package *citar*, *helm-bibtex*, *ivy-bibtex*, or the like can help find the right citekey from inside Emacs.
 
 ## Postscript Oct 10, 2022
 My approach was developed independently of another [solution](https://github.com/fangohr/template-latex-paper-from-orgmode/issues/4) found here. 
