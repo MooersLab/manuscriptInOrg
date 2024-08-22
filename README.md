@@ -19,28 +19,29 @@ You can integrate manuscript writing with org-agenda and org-roam more efficient
 
 ## Sample second page
 
-![Screenshot 2024-08-18 at 7 36 46 AM](https://github.com/user-attachments/assets/01615879-aee2-41e7-ae65-f3ca1619ac9b)
+![Screenshot 2024-08-22 at 4 00 55 PM](https://github.com/user-attachments/assets/843aa28e-97ee-4a96-b151-1069e725d1c3)
 
 
 ## Default Features
 
 - Line numbers.
 - Block paragraphs.
+- No numbering of the sections.
 - Blank lines between paragraphs.
 - Narrow margins to conserve paper in drafts.
 - Single-spaced abstract.
 - Double-spaced main text.
-- Erapping of sentences written one per line for sane version control.
+- Wrapping of sentences written one per line for sane version control.
 - Helvetica font.
 - Page numbers in the upper right-hand corner.
-- No page number on first page.
+- No page number on the first page.
 - Comments in GUIDANCE drawers that can be closed with `Shift-TAB` in org-mode to reduce clutter. The contents of these drawers are still printed on export to PDF.
 
 
 ## Installation
 
 1. Git clone the repo `git clone https://github.com/MooersLab/manuscriptInOrg.git`.
-2. Copy main.org to a your project folder.
+2. Copy main.org to your project folder.
 3. Load main.org file in Emacs via the File pulldown menu or `C-x C-f`.
 4. Edit the file to customize to your manuscript.
 5. Edit the paths to your global.bib file and your image files.
@@ -48,7 +49,7 @@ You can integrate manuscript writing with org-agenda and org-roam more efficient
 
 Compiling takes several seconds on a 2018 MacBook Pro with 32 GB of RAM. 
 Org-mode is built into recent versions of Emacs. 
-The main.org file will compile to the final PDF without any configuration.
+The main.org file will be compiled into the final PDF without any configuration.
 Try `emacs -Q main.org` and then enter `C-c C-e l o`. 
 The PDF will open in your default PDF viewer.
 
