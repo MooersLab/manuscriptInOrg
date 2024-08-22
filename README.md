@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.3&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.4&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -93,6 +93,7 @@ Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has fu
 |:-----------|:------------------------------------------------------------------------------------------------------------------------------------------|:--------------------|
 | Version 0.2 |   Added badges, funding, and update table.                                                                                                 | 2024 May 21          |
 | Version 0.3 |   Updated main.org so it can compile without configuration from an init.el file.                                                           | 2024 August 18       |
+| Version 0.4 |   Fixed issues with preamble. Put comments in drawers.                                                                                     | 2024 August 22       |
 
 ## Sources of funding
 
