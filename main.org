@@ -1,8 +1,9 @@
 #+TITLE: Generic Manuscript Template
-#+OPTIONS: toc:nil author:nil \n:nil
-#+LaTeX_CLASS: article 
-#+LaTeX_CLASS_OPTIONS: [11pt,apalike,letterpaper] % apalike in used by the cell bibliography style
-# % draft is an option for the documentclass but it buys us nothing here. It only inhibits the importing of images.
+#+Author: Blaine Mooers
+#+Options: title:nil toc:nil author:nil \n:nil num:nil
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [11pt,letterpaper]
+#+LaTeX_HEADER:\usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
 #+LaTeX_HEADER:\usepackage{minted}
 #+LaTeX_HEADER:\usepackage{booktabs}
 #+LaTeX_HEADER:\usepackage{graphicx}
@@ -31,33 +32,43 @@
 #+LaTeX_HEADER:\renewcommand{\familydefault}{\sfdefault}
 #+LaTeX_HEADER:\modulolinenumbers[1]
 #+LaTeX_HEADER:\setlength{\parindent}{0pt} % Remove automatic indent of paragraphs.
-#+LaTeX_HEADER:\author[1]{Graduate Student}
-#+LaTeX_HEADER:\author[2]{Senior Collaborator}
-#+LaTeX_HEADER:\author[3]{Staff Scientist}
-#+LaTeX_HEADER:\author[1,2,3]{Blaine Mooers\thanks{blaine-mooers at ouhsc.edu, phone: 405-271-8XXX, FAX: 405-271-3X3X}}
-#+LaTeX_HEADER:\affil[1]{Department of Biochemistry and Molecular Biology, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
-#+LaTeX_HEADER:\affil[2]{Stephenson Cancer Center, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
-#+LaTeX_HEADER:\affil[2]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
+
+#+LaTeX:\author[1]{Graduate Student}
+#+LaTeX:\author[2]{Senior Collaborator}
+#+LaTeX:\author[3]{Staff Scientist}
+#+LaTeX:\author[1,2,3]{Blaine Mooers\thanks{blaine-mooers at ouhsc.edu, phone: 405-271-8XXX, FAX: 405-271-3X3X}}
+#+LaTeX:\affil[1]{Department of Biochemistry and Molecular Biology, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
+#+LaTeX:\affil[2]{Stephenson Cancer Center, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
+#+LaTeX:\affil[2]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 # %%%%%%%%%%%%%%%%%%%%%%% End of the Preamable %%%%%%%%%%%%%%%%%%%%%%%%
 
+
+#+LATEX:\title{Generic Manuscript Template}
+
+#+LATEX:\maketitle
+#+LATEX:\pagenumbering{gobble} % remove page number for title page
+#+LATEX:\newpage
+#+LATEX:\pagenumbering{arabic} % start page numbering on second page
+#+LATEX:\linenumbers
 #+LaTeX:\newpage
 
 #+LaTeX:\linenumbers
 
-#+LaTeX:\begin{singlespace}
-#+LaTeX:\section*{Abstract}
+#+LATEX:\begin{singlespace}
+#+LATEX:\section*{Abstract}
 I draft the abstract after defining the scope of the paper with the Introduction and outlining the key results in the Results section and maybe the Discussion section.
 I usually rewrite the abstract after the first draft is finished.
 The abstract is often single-spaced.
 I enclosed the abstract in the \emph{singlespace} environment.
-#+LaTeX:\end{singlespace}
+#+LATEX:\end{singlespace}
 
 
 
-#+LaTeX:\paragraph{Keywords:} I draft the keywords in the writing document and select the best up to the allowable limit.
+\paragraph{ Keywords:} I draft the keywords in the writing document and select the best up to the allowable limit.
 
-#+LaTeX:% A pox on those who over-use abbreviations! Unfamiliar ones slow-down the reader. Limit them to well-known ones.  
-#+LaTeX:\paragraph{Abbreviations:} GUI: graphical user interface, IDE: integrated development environment 
+\paragraph{Abbreviations:} GUI: graphical user interface, IDE: integrated development environment
+
+
 
 * Introduction
 
