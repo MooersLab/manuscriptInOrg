@@ -4,24 +4,20 @@
 #+LaTeX_CLASS: article
 #+LaTeX_CLASS_OPTIONS: [11pt,letterpaper]
 #+LaTeX_HEADER:\usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
-#+LaTeX_HEADER:\usepackage{minted}
 #+LaTeX_HEADER:\usepackage{booktabs}
 #+LaTeX_HEADER:\usepackage{graphicx}
 #+LaTeX_HEADER:\usepackage{hyperref,lineno}
 #+LaTeX_HEADER:\usepackage{datetime2}
 #+LaTeX_HEADER:\usepackage{amsmath,amssymb,amsfonts}
 #+LaTeX_HEADER:\usepackage{breakcites} % allow citatation to wrap
-#+LaTeX_HEADER:% Tweak the margin width to suit by changing the width of the text area.
-#+LaTeX_HEADER:% 6 inches would be a good choice for local editing.
-#+LaTeX_HEADER:% 6.5 inches would be good for submission.
-#+LaTeX_HEADER:%\usepackage[letterpaper, total={7in, 9in}]{geometry} % good without line numbers, saves space
-#+LaTeX_HEADER:\usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
+
 #+LaTeX_HEADER:\usepackage[utf8]{inputenc}
 #+LaTeX_HEADER:\usepackage{setspace} \doublespacing
 #+LATEX_HEADER:\usepackage{parskip} % add a blank line between paragraphs upon export to PDF.
 #+LaTeX_HEADER:\usepackage[T1]{fontenc}
 #+LaTeX_HEADER:\usepackage{authblk}
 #+LaTeX_HEADER:\usepackage[labelfont=bf]{caption}
+
 #+LaTeX_HEADER:\DeclareCaptionType{equ}[][]
 #+LaTeX_HEADER:%Print page numbers in the upper right corner rather than the bottom center.
 #+LaTeX_HEADER:\pagestyle{myheadings}
@@ -40,29 +36,24 @@
 #+LaTeX:\affil[1]{Department of Biochemistry and Molecular Biology, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 #+LaTeX:\affil[2]{Stephenson Cancer Center, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 #+LaTeX:\affil[2]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
-# %%%%%%%%%%%%%%%%%%%%%%% End of the Preamable %%%%%%%%%%%%%%%%%%%%%%%%
 
 
 #+LATEX:\title{Generic Manuscript Template}
 
 #+LATEX:\maketitle
-#+LATEX:\pagenumbering{gobble} % remove page number for title page
+#+LATEX:\pagenumbering{gobble} % remove page number
 #+LATEX:\newpage
-#+LATEX:\pagenumbering{arabic} % start page numbering on second page
+#+LATEX:\pagenumbering{arabic}
 #+LATEX:\linenumbers
-#+LaTeX:\newpage
 
-#+LaTeX:\linenumbers
 
 #+LATEX:\begin{singlespace}
 #+LATEX:\section*{Abstract}
 I draft the abstract after defining the scope of the paper with the Introduction and outlining the key results in the Results section and maybe the Discussion section.
 I usually rewrite the abstract after the first draft is finished.
 The abstract is often single-spaced.
-I enclosed the abstract in the \emph{singlespace} environment.
+I enclosed the abstract in the *singlespace* environment.
 #+LATEX:\end{singlespace}
-
-
 
 \paragraph{ Keywords:} I draft the keywords in the writing document and select the best up to the allowable limit.
 
@@ -71,9 +62,12 @@ I enclosed the abstract in the \emph{singlespace} environment.
 
 
 * Introduction
-
-# % The Introduction is not a literature review.
-# % That is a separate class manuscript.
+:PROPERTIES:
+:CUSTOM_ID: sec:introduction
+:END:
+:GUIDNACE:
+The Introduction is not a literature review.
+That is a separate class manuscript.
 
 The first paragraph defines the scope of the problem and why it is important.
 It might cite several key contributions in the area \cite{Acharya2011SolvingProbabilisticProgrammingProblemsInvolvingMultiChoiceParameters, Luft2007EfficientOptimizationOfCrystallizationConditionsByManipulationOfDropVolumeRatioAndTemperature}.
@@ -85,23 +79,33 @@ The second paragraph starts with the central hypothesis that addressed the quest
 This is followed by a summary of our approach.
 A sentence or two may be expended on a summary of what we found.
 The last sentence describes the audience of the article.
+:END:
 
 
 
 * Materials and Methods
-
+:PROPERTIES:
+:CUSTOM_ID: sec:methods
+:END:
+:GUIDANCE:
 This section is a series of subsections that may or may not be in chronological order.
 This section is often placed after the Discussion section.
+:END:
 
 * Results
-
-Paragraph One: Map of the Results section. 
+:PROPERTIES:
+:CUSTOM_ID: sec:results
+:END:
+:Guidnace:
+Paragraph One: Map of the Results section.
 This introductory paragraph is usually missing, but no editor has ever asked me to delete it.
 This paragraph tells the reader in a little more detail than the Introduction what they can expect to see and the order in which the results will be presented.
-
+:END:
 
 ** Most important result
-Cover the results in decreasing importance relative to the degree to which they address the central hypothesis of the paper. 
+
+:GUIDNACE:
+Cover the results in decreasing importance relative to the degree to which they address the central hypothesis of the paper.
 If they have no relevance, save them from another paper.
 Chronological order is usually a poor choice.
 End each paragraph with a conclusion.
@@ -109,15 +113,17 @@ End each paragraph with a conclusion.
 Refer to tables and figures via their labels.
 For example, see the hot figure (Fig. \ref{fig:labelA}).
 The numbering of the figures is handled automatically, so you can reorganize them without having to renumber them.
+:END:
+
 
 ** Second most important result
-
+:GUIDNACE:
 See hot numbers in (Table \ref{tab:first}).
 The numbering of the tables is handled automatically, so you can reorganize them without having to renumber them.
-
+:END:
 
 ** Third most important result
-
+:GUIDNACE:
 Inline equations are placed between dollar signs: $y = mx + b$.
 Display equations are placed between double-dollar signs or inside an equation environment.
 These environments are not floats.
@@ -125,15 +131,16 @@ You can define a custom float to enclose them and place them inside the float to
 The \emph{equ} environment is defined in the preamble.
 
 
-\begin{equ}[htp]  
-\begin{equation}   
-i \hbar \frac{d}{d t}|\Psi(t)\rangle=\hat{H}|\Psi(t)\rangle  
-\end{equation}  
-\caption{Eq. \label{Eq:first}Schrodinger's time-dependent wave equation.}   
+\begin{equ}[htp]
+\begin{equation}
+i \hbar \frac{d}{d t}|\Psi(t)\rangle=\hat{H}|\Psi(t)\rangle
+\end{equation}
+\caption{Eq. \label{Eq:first}Schrodinger's time-dependent wave equation.}
 \end{equ}
+:END:
 
 ** Fourth most important result
-
+:GUIDNACE:
 Code listings also have to be enclosed inside floats to have captions.
 The caption can be placed above or below the code listing.
 
@@ -141,11 +148,11 @@ These environments need to be enclosed in the singlespace environment to retain 
 
 The minted package provides the syntax highlighting.
 The \mintinline{bash}{-shell-escape} must be used on compiling.
-
+:END:
 
 
 #+LaTeX:\begin{singlespace}
-#+LaTeX:% Line numbering on and aligned with left margin. 
+#+LaTeX:% Line numbering on and aligned with left margin.
 #+LaTeX:\begin{code}{}
 #+LaTeX:  \index{openCV!measureSizes}
 #+LaTeX:  \label{lst:measureSize}
@@ -162,7 +169,7 @@ The \mintinline{bash}{-shell-escape} must be used on compiling.
 #+LaTeX:import argparse
 #+LaTeX:import imutils
 #+LaTeX:import cv2
-#+LaTeX: 
+#+LaTeX:
 #+LaTeX:def midpoint(ptA, ptB):
 #+LaTeX:    return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
 #+LaTeX:\end{minted}
@@ -170,10 +177,12 @@ The \mintinline{bash}{-shell-escape} must be used on compiling.
 #+LaTeX:\end{code}
 #+LaTeX:\end{singlespace}
 
+
+
 ** Fifth most important result
 
 ** Sixth most important result
-
+:GUIDNACE:
 There could be up to four more subsections in a results-heavy paper.
 
 There are usually four graphics and two tables in a minimal publishable unit.
@@ -182,15 +191,20 @@ I have seen figures with ten panels.
 Is this one figure or ten?
 
 Delete all results that do not address the central hypothesis or are less important.
+:END:
+
 
 * Discussion
-
+:PROPERTIES:
+:CUSTOM_ID: sec:discussion
+:END:
+:GUIDNACE:
 How our results relate to the results of others.
 (Avoid using merged Results and Discussion sections.
-They rarely work well. 
+They rarely work well.
 This is a research paper, not a seminar).
 
-Paragraph One: Map of the Discussion section. 
+Paragraph One: Map of the Discussion section.
 This paragraph is usually missing, but it can orient the reader.
 
 Paragraphs two and beyond must end with conclusions in their last sentences.
@@ -199,27 +213,35 @@ The conclusion can be a call to do more research.
 Lay out the topics in declining importance.
 
 Delete the paragraph with no bearing on the central hypothesis.
+:END:
 
 
 * Acknowledgments
-
-Acknowledgments of core facilities and grant support. 
+:PROPERTIES:
+:CUSTOM_ID: sec:acknowledgments
+:END:
+:GUIDNACE:
+Acknowledgments of core facilities and grant support.
 Double-check the grant numbers.
-It is easy to make typos in these.
+It is easy to make typos in thdese.
 These acknowledgments are critical to the continued support of grants.
+:END:
 
-#+Latex:\newpage 
+
+#+Latex:\newpage
 #+LaTeX:\bibliographystyle{cell}
 #+LaTeX:\bibliography{/Users/blaine/Documents/global.bib}
 
 #+LaTeX:\newpage
 #+LaTeX:\listoftables
-Tables should be one per page. 
 
-The manual assembly of tables is a challenge for beginners. 
-Pandas, R, and the Python package latextable \url{https://github.com/JAEarly/latextable} can write out LaTeX tables. 
-Tables are easy to assemble in org-mode in Emacs and exported to LaTeX. 
-Markdown tables can be exported to LaTeX with pandoc. 
+:GUIDANCE:
+Tables should be one per page.
+
+The manual assembly of tables is a challenge for beginners.
+Pandas, R, and the Python package latextable \url{https://github.com/JAEarly/latextable} can write out LaTeX tables.
+Tables are easy to assemble in org-mode in Emacs and exported to LaTeX.
+Markdown tables can be exported to LaTeX with pandoc.
 There are online tools to aid in the assembly of LaTeX tables: \url{https://www.tablesgenerator.com/}.
 
 The first table below was made with vanilla LaTeX.
@@ -227,7 +249,7 @@ The second table was made with the booktabs package: The horizontal rules are of
 
 There is a \emph{longtable} package for supporting tables that span more than one page.
 It is also possible to have tables oriented in the landscape orientation via the \emph{lscape} package.
-
+:END:
 
 
 #+LaTeX:\newpage
@@ -261,7 +283,9 @@ It is also possible to have tables oriented in the landscape orientation via the
 
 #+LaTeX:\newpage
 #+LaTeX:\listoffigures
-One figure per page. 
+:GUIDANCE:
+One figure per page.
+:END:
 
 #+LaTeX:\newpage
 
