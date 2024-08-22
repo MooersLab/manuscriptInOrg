@@ -2,14 +2,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
-# Manuscript template in org for the first submission 
+# Manuscript template in org-mode for the first submission 
 
 ## Background
 The first submission of a research paper for peer review can be in a generic format as a PDF.
 The advantage of a plain generic template is that it can be submitted to many different journals.
 
 This is an org-mode variant of the main.tex file in the MooersLab/manuscriptInLaTeX [repo](https://github.com/MooersLab/manuscriptInLaTeX).
-This template is for people who prefer to write research papers in org because they do a lot of their other work in org and do not want to switch context to LaTeX.
+This template is for people who prefer to write research papers in org-mode because they do a lot of their other work in org-mode and do not want to switch context to LaTeX.
+They would rather spend all day in org-mode; it is that fun to use.
 Org supports easy shuffling of document subtrees and easy table generation.
 You can integrate manuscript writing with org-agenda and org-roam more efficiently by staying in org-mode.
 
