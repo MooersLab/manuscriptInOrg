@@ -24,15 +24,17 @@ You can integrate manuscript writing with org-agenda and org-roam more efficient
 
 ## Default Features
 
-- line numbers
-- block paragraphs
-- blank lines between paragraphs
-- narrow margins to conserve paper in drafts
-- single-spaced abstract
-- double-spaced one text
-- wrapping of sentences written one per line for sane version control
-- Helvetica font
-- paper numbers in the upper right hand corner
+- Line numbers.
+- Block paragraphs.
+- Blank lines between paragraphs.
+- Narrow margins to conserve paper in drafts.
+- Single-spaced abstract.
+- Double-spaced main text.
+- Erapping of sentences written one per line for sane version control.
+- Helvetica font.
+- Page numbers in the upper right-hand corner.
+- No page number on first page.
+- Comments in GUIDANCE drawers that can be closed with `Shift-TAB` in org-mode to reduce clutter. The contents of these drawers are still printed on export to PDF.
 
 
 ## Installation
