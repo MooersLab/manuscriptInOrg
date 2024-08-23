@@ -9,10 +9,25 @@ The first submission of a research paper for peer review can be in a generic for
 The advantage of a plain generic template is that it can be submitted to many different journals.
 
 This is an org-mode variant of the main.tex file in the MooersLab/manuscriptInLaTeX [repo](https://github.com/MooersLab/manuscriptInLaTeX).
-This template is for people who prefer to write research papers in org-mode because they do a lot of their other work in org-mode and do not want to switch context to LaTeX.
+This template is for people who prefer to write research papers in org-mode because they do a lot of their other work in org-mode and do not want to switch to working in LaTeX.
 They would rather spend all day in org-mode; it is that fun to use.
-Org supports easy shuffling of document subtrees and easy table generation.
-You can integrate manuscript writing with org-agenda and org-roam more efficiently by staying in org-mode.
+Org supports easy shuffling and other manipulations of document subtrees, very easy table generation, and literate programming.
+These features are beyond what is readily possible in LaTeX without using extra packages.
+You can also integrate manuscript writing with time management via org-agenda and knowledge management via org-roam more efficiently by staying in org-mode.
+
+If you are already a strong LaTeX user, there is plenty of tweaking of the preamble of this template that you can do to add your favorite packages and settings.
+Org-mode recognizes many LaTeX commands direcly.
+LaTeX code can also be utilized inside of code blocks that can be evaluated on the fly.
+See the [org-mode manual](https://orgmode.org/manual/).
+
+```elisp
+#+name: hello-world
+#+BEGIN_SRC latex
+\LaTeX code
+#+END_SRC
+```
+
+
 
 ## Sample title page
 
@@ -27,7 +42,7 @@ You can integrate manuscript writing with org-agenda and org-roam more efficient
 
 - Line numbers.
 - Block paragraphs.
-- No numbering of the sections.
+- No numbering of the sections. This is suppressed in a org-mode setting in the header (num:\nil)
 - Blank lines between paragraphs.
 - Narrow margins to conserve paper in drafts.
 - Single-spaced abstract.
@@ -36,7 +51,7 @@ You can integrate manuscript writing with org-agenda and org-roam more efficient
 - Helvetica font.
 - Page numbers in the upper right-hand corner.
 - No page number on the first page.
-- Comments in GUIDANCE drawers that can be closed with `Shift-TAB` in org-mode to reduce clutter. The contents of these drawers are still printed on export to PDF.
+- Comments are now in GUIDANCE drawers that can be closed with `Shift-TAB` in org-mode to reduce clutter. The contents of these drawers are still printed on export to PDF. You must delete these drawers upon first export to PDF to avoid having them present. To retain the contents of these drawers, you can comment out the lines of text in the drawer by inserting a pound sign in front of each line. This can be done by selecting a drawer's content and entering `M-;`.
 
 
 ## Installation
@@ -58,8 +73,8 @@ The PDF will open in your default PDF viewer.
 ## Assumptions
 
 1. LaTeX is installed with all of the required style files. However, my installation was missing the **break cities.sty** file. I installed this with the `sudo port install texlive-bibtex-extra` command.
-2. Emacs is using used to edit the org file.
-3. You will use the LaTeX cite command and let LaTeX handle the generation of the literature cited section. This package *citar*, *helm-bibtex*, *ivy-bibtex*, or the like can help find the right citekey from inside Emacs.
+2. You will use the LaTeX cite command and let LaTeX handle the generation of the literature cited section. This package *citar*, *helm-bibtex*, *ivy-bibtex*, or the like can help find the right citekey from inside Emacs.
+3. You can edit org-mode files in other text editors. Many text editors support syntax highlighting for org-mode. VS Code has a package that provides additional support. To get the most out of utilizing org-mode, it is best to utilize it inside of Emacs. Org-mode is now built into GNU Emacs. You can utilize org-mode without any configuration of the `init.el` file. You can achieve the same effect by starting your current Emacs with the `-Q` flag, which skips reading your `init.el` file. The editing and building of a `init.el` file to extend the features of Emacs can be an activity trap. Frustration associated with errors late during the editing of this file led to Emacs having a reputation for being difficult to master.
 
 ## Postscript Oct 10, 2022
 My approach was developed independently of another [solution](https://github.com/fangohr/template-latex-paper-from-orgmode/issues/4) found here. 
