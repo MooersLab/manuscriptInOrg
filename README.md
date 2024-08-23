@@ -12,11 +12,11 @@ This is an org-mode variant of the main.tex file in the MooersLab/manuscriptInLa
 This template is for people who prefer to write research papers in org-mode because they do a lot of their other work in org-mode and do not want to switch to working in LaTeX.
 They would rather spend all day in org-mode; it is that fun to use.
 Org supports easy shuffling and other manipulations of document subtrees, very easy table generation, and literate programming.
+You can also integrate manuscript writing with time management via org-agenda and knowledge management via org-roam more efficiently by staying in org-mode. 
 These features are beyond what is readily possible in LaTeX without using extra packages.
-You can also integrate manuscript writing with time management via org-agenda and knowledge management via org-roam more efficiently by staying in org-mode.
 
 If you are already a strong LaTeX user, there is plenty of tweaking of the preamble of this template that you can do to add your favorite packages and settings.
-Org-mode recognizes many LaTeX commands direcly.
+Org-mode recognizes many LaTeX commands directly.
 LaTeX code can also be utilized inside of code blocks that can be evaluated on the fly.
 See the [org-mode manual](https://orgmode.org/manual/).
 
