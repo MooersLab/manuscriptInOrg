@@ -46,14 +46,23 @@
 #+LATEX:\pagenumbering{arabic}
 #+LATEX:\linenumbers
 
-
-#+LATEX:\begin{singlespace}
-#+LATEX:\section*{Abstract}
+:GUIDANCE:
 I draft the abstract after defining the scope of the paper with the Introduction and outlining the key results in the Results section and maybe the Discussion section.
 I usually rewrite the abstract after the first draft is finished.
 The abstract is often single-spaced.
 I enclosed the abstract in the *singlespace* environment.
+:END:
+
+#+LATEX:\begin{singlespace}
+#+LATEX:\section*{Abstract}
+
+
 #+LATEX:\end{singlespace}
+
+:GUIDANCE:
+The paragraph enviornment in LaTeX does not have a native analog in org.
+However, org will implement the paragraph command on export to PDF.
+:END:
 
 \paragraph{ Keywords:} I draft the keywords in the writing document and select the best up to the allowable limit.
 
@@ -131,7 +140,7 @@ You can define a custom float to enclose them and place them inside the float to
 The \emph{equ} environment is defined in the preamble.
 
 
-\begin{equ}[htp]
+\begin\begin{equ}[htp]
 \begin{equation}
 i \hbar \frac{d}{d t}|\Psi(t)\rangle=\hat{H}|\Psi(t)\rangle
 \end{equation}
