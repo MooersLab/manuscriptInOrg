@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.4&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.5&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -41,16 +41,17 @@ See the [org-mode manual](https://orgmode.org/manual/).
 ## Default Features
 
 - Line numbers.
-- Block paragraphs.
-- No numbering of the sections. This is suppressed in a org-mode setting in the header (num:\nil)
-- Blank lines between paragraphs.
-- Narrow margins to conserve paper in drafts.
+- Block paragraphs. Reset the indent on the line `\setlength{\parindent}{0pt} `  if you indents.
+- No numbering of the sections. This is suppressed in a org-mode setting in the header (i.e., num:\nil). Remove this setting to apply section numbering.
+- Blank lines between paragraphs. This is set by the line `\usepackage{parskip}` in the preamble.
+- Narrow margins to conserve paper in drafts. Edit the line `\usepackage[letterpaper, total={6.75in, 9in}]{geometry}` to change the margin width.
 - Single-spaced abstract.
 - Double-spaced main text.
 - Wrapping of sentences written one per line for sane version control.
 - Helvetica font.
 - Page numbers in the upper right-hand corner.
 - No page number on the first page.
+- The LaTeX header is in a drawer so you do not have to look at it when working in Emacs.
 - Comments are now in GUIDANCE drawers that can be closed with `Shift-TAB` in org-mode to reduce clutter. The contents of these drawers are still printed on export to PDF. You must delete these drawers upon first export to PDF to avoid having them present. To retain the contents of these drawers, you can comment out the lines of text in the drawer by inserting a pound sign in front of each line. This can be done by selecting a drawer's content and entering `M-;`.
 
 
@@ -111,6 +112,7 @@ Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has fu
 | Version 0.2 |   Added badges, funding, and update table.                                                                                                 | 2024 May 21          |
 | Version 0.3 |   Updated main.org so it can compile without configuration from an init.el file.                                                           | 2024 August 18       |
 | Version 0.4 |   Fixed issues with preamble. Put comments in drawers.                                                                                     | 2024 August 22       |
+| Version 0.5 |   Put preamble in a drawer.                                                                                                                   | 2024 August 22       |
 
 ## Sources of funding
 
