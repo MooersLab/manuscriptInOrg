@@ -38,7 +38,7 @@
 #+LaTeX:\author[1,2,3]{Blaine Mooers\thanks{blaine-mooers at ouhsc.edu, phone: 405-271-8XXX, FAX: 405-271-3X3X}}
 #+LaTeX:\affil[1]{Department of Biochemistry and Molecular Biology, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 #+LaTeX:\affil[2]{Stephenson Cancer Center, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
-#+LaTeX:\affil[2]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
+#+LaTeX:\affil[3]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 
 
 #+LATEX:\title{Generic Manuscript Template}
@@ -49,6 +49,7 @@
 #+LATEX:\pagenumbering{arabic}
 #+LATEX:\linenumbers
 
+** abtract guidance                                                :noexport:
 :GUIDANCE:
 I draft the abstract after defining the scope of the paper with the Introduction and outlining the key results in the Results section and maybe the Discussion section.
 I usually rewrite the abstract after the first draft is finished.
@@ -62,6 +63,7 @@ I enclosed the abstract in the *singlespace* environment.
 
 #+LATEX:\end{singlespace}
 
+** keyword guidance                                                :noexport:
 :GUIDANCE:
 The paragraph enviornment in LaTeX does not have a native analog in org.
 However, org will implement the paragraph command on export to PDF.
@@ -77,6 +79,7 @@ However, org will implement the paragraph command on export to PDF.
 :PROPERTIES:
 :CUSTOM_ID: sec:introduction
 :END:
+** introduction guidance                                           :noexport:
 :GUIDNACE:
 The Introduction is not a literature review.
 That is a separate class manuscript.
@@ -99,6 +102,7 @@ The last sentence describes the audience of the article.
 :PROPERTIES:
 :CUSTOM_ID: sec:methods
 :END:
+** methods guidance                                                :noexport:
 :GUIDANCE:
 This section is a series of subsections that may or may not be in chronological order.
 This section is often placed after the Discussion section.
@@ -108,6 +112,7 @@ This section is often placed after the Discussion section.
 :PROPERTIES:
 :CUSTOM_ID: sec:results
 :END:
+** results guidance                                                :noexport:
 :Guidnace:
 Paragraph One: Map of the Results section.
 This introductory paragraph is usually missing, but no editor has ever asked me to delete it.
@@ -115,7 +120,7 @@ This paragraph tells the reader in a little more detail than the Introduction wh
 :END:
 
 ** Most important result
-
+*** most important result guidance                                 :noexport:
 :GUIDNACE:
 Cover the results in decreasing importance relative to the degree to which they address the central hypothesis of the paper.
 If they have no relevance, save them from another paper.
@@ -129,12 +134,15 @@ The numbering of the figures is handled automatically, so you can reorganize the
 
 
 ** Second most important result
+*** guidance second most important result                          :noexport:
 :GUIDNACE:
 See hot numbers in (Table \ref{tab:first}).
 The numbering of the tables is handled automatically, so you can reorganize them without having to renumber them.
 :END:
 
+
 ** Third most important result
+*** guidance third most important result                           :noexport:
 :GUIDNACE:
 Inline equations are placed between dollar signs: $y = mx + b$.
 Display equations are placed between double-dollar signs or inside an equation environment.
@@ -151,7 +159,10 @@ i \hbar \frac{d}{d t}|\Psi(t)\rangle=\hat{H}|\Psi(t)\rangle
 \end{equ}
 :END:
 
+
+
 ** Fourth most important result
+*** guidance fourth most important result                          :noexport:
 :GUIDNACE:
 Code listings also have to be enclosed inside floats to have captions.
 The caption can be placed above or below the code listing.
@@ -193,7 +204,10 @@ The \mintinline{bash}{-shell-escape} must be used on compiling.
 
 ** Fifth most important result
 
+
+
 ** Sixth most important result
+*** guidance sixth most important result                           :noexport:
 :GUIDNACE:
 There could be up to four more subsections in a results-heavy paper.
 
@@ -210,6 +224,7 @@ Delete all results that do not address the central hypothesis or are less import
 :PROPERTIES:
 :CUSTOM_ID: sec:discussion
 :END:
+** discussion guidance                                             :noexport:
 :GUIDNACE:
 How our results relate to the results of others.
 (Avoid using merged Results and Discussion sections.
@@ -232,6 +247,8 @@ Delete the paragraph with no bearing on the central hypothesis.
 :PROPERTIES:
 :CUSTOM_ID: sec:acknowledgments
 :END:
+
+** acknolwedgements guidance                                       :noexport:
 :GUIDNACE:
 Acknowledgments of core facilities and grant support.
 Double-check the grant numbers.
@@ -247,6 +264,7 @@ These acknowledgments are critical to the continued support of grants.
 #+LaTeX:\newpage
 #+LaTeX:\listoftables
 
+** tables guidance                                                 :noexport:
 :GUIDANCE:
 Tables should be one per page.
 
@@ -261,8 +279,6 @@ The second table was made with the booktabs package: The horizontal rules are of
 
 There is a \emph{longtable} package for supporting tables that span more than one page.
 It is also possible to have tables oriented in the landscape orientation via the \emph{lscape} package.
-:END:
-
 
 #+LaTeX:\newpage
 
@@ -291,10 +307,12 @@ It is also possible to have tables oriented in the landscape orientation via the
 #+LaTeX: Density (g/m) & 0.01  & 0.03  &  0.09 &  0.77\\ \bottomrule
 #+LaTeX:\end{tabular}
 #+LaTeX:\end{table}
+:END:
 
 
 #+LaTeX:\newpage
 #+LaTeX:\listoffigures
+** guidance list of figures                                        :noexport:
 :GUIDANCE:
 One figure per page.
 :END:
