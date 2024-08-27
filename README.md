@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.6&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.7&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -113,8 +113,8 @@ Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has fu
 | Version 0.3 |   Updated main.org so it can compile without configuration from an init.el file.                                       | 2024 August 18      |
 | Version 0.4 |   Fixed issues with preamble. Put comments in drawers.                                                                       | 2024 August 22       |
 | Version 0.5 |   Put preamble in a drawer.                                                                                                                     | 2024 August 26       |
-| Version 0.6 |   Put GUIDANCE drawers under subheadings with noexport tag.                                                         | 2024 August 226      |
-
+| Version 0.6 |   Put GUIDANCE drawers under subheadings with noexport tag.                                                         | 2024 August 26      |
+| Version 0.7 |  Add urlx package to allow linebreaks in urls.                                                                                        | 2024 August 27     |
 
 ## Sources of funding
 
