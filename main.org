@@ -7,6 +7,7 @@
 #+LaTeX_HEADER:\usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
 #+LaTeX_HEADER:\usepackage{booktabs}
 #+LaTeX_HEADER:\usepackage{graphicx}
+#+LaTeX_HEADER:\usepackage{xurl} % permit line breaks in urls
 #+LaTeX_HEADER:\usepackage{hyperref,lineno}
 #+LaTeX_HEADER:\usepackage{datetime2}
 #+LaTeX_HEADER:\usepackage{amsmath,amssymb,amsfonts}
