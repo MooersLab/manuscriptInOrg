@@ -1,9 +1,10 @@
 #+TITLE: Generic Manuscript Template
 #+Author: Blaine Mooers
 #+Options: title:nil toc:nil author:nil \n:nil num:nil
+#+STARTUP: noindent overview
+:PREAMBLE:
 #+LaTeX_CLASS: article
 #+LaTeX_CLASS_OPTIONS: [11pt,letterpaper]
-:PREAMBLE:
 #+LaTeX_HEADER:\usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
 #+LaTeX_HEADER:\usepackage{booktabs}
 #+LaTeX_HEADER:\usepackage{graphicx}
@@ -31,7 +32,7 @@
 #+LaTeX_HEADER:\renewcommand{\familydefault}{\sfdefault}
 #+LaTeX_HEADER:\modulolinenumbers[1]
 #+LaTeX_HEADER:\setlength{\parindent}{0pt} % Remove automatic indent of paragraphs.
-:END:
+
 
 #+LaTeX:\author[1]{Graduate Student}
 #+LaTeX:\author[2]{Senior Collaborator}
@@ -49,6 +50,9 @@
 #+LATEX:\newpage
 #+LATEX:\pagenumbering{arabic}
 #+LATEX:\linenumbers
+
+:END:
+
 
 ** abtract guidance                                                :noexport:
 :GUIDANCE:
@@ -96,6 +100,9 @@ This is followed by a summary of our approach.
 A sentence or two may be expended on a summary of what we found.
 The last sentence describes the audience of the article.
 :END:
+
+
+
 
 
 
