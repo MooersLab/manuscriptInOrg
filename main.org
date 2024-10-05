@@ -8,6 +8,20 @@
 #+LaTeX_CLASS: article
 #+LaTeX_CLASS_OPTIONS: [11pt,letterpaper]
 #+LaTeX_HEADER:\usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
+
+#+LaTeX_HEADER:\usepackage{fancyhdr,lipsum} % conflicts with \pagestyle{myheading}
+#+LaTeX_HEADER:\pagestyle{fancy}
+#+LaTeX_HEADER:\fancyhf{}% Clear header/footer
+#+LaTeX_HEADER:\fancyhead[C]{%
+#+LaTeX_HEADER:  \ifodd\value{page}\relax
+#+LaTeX_HEADER:    Generic manuscript template in Org % Odd page header
+#+LaTeX_HEADER:  \else
+#+LaTeX_HEADER:    Student, ..., and Mooers % Even page header
+#+LaTeX_HEADER:  \fi}
+#+LaTeX_HEADER:\fancyhead[R]{\thepage} % insert page number on right side of header. 
+#+LaTeX_HEADER:\renewcommand{\headrulewidth}{1pt} % set to 0pt to hide headrule
+
+#+LaTeX_HEADER:\usepackage{minted}
 #+LaTeX_HEADER:\usepackage{booktabs}
 #+LaTeX_HEADER:\usepackage{graphicx}
 #+LaTeX_HEADER:\usepackage{xurl} % permit line breaks in urls
@@ -25,8 +39,6 @@
 #+LaTeX_HEADER:\usepackage[labelfont=bf]{caption}
 
 #+LaTeX_HEADER:\DeclareCaptionType{equ}[][]
-#+LaTeX_HEADER:%Print page numbers in the upper right corner rather than the bottom center.
-#+LaTeX_HEADER:\pagestyle{myheadings}
 #+LaTeX_HEADER:% Create a code float environment to enclosed minted environments so that captions can be added to code listings.
 #+LaTeX_HEADER:\newenvironment{code}{\captionsetup{type=listing}}{}
 #+LaTeX_HEADER:% Approximate Arial font. To save ink by returning to a sans serif font, comment the next two lines.
@@ -35,7 +47,6 @@
 #+LaTeX_HEADER:\modulolinenumbers[1]
 #+LaTeX_HEADER:\setlength{\parindent}{0pt} % Remove automatic indent of paragraphs.
 
-
 #+LaTeX:\author[1]{Graduate Student}
 #+LaTeX:\author[2]{Senior Collaborator}
 #+LaTeX:\author[3]{Staff Scientist}
@@ -43,10 +54,8 @@
 #+LaTeX:\affil[1]{Department of Biochemistry and Molecular Biology, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 #+LaTeX:\affil[2]{Stephenson Cancer Center, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 #+LaTeX:\affil[3]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
-
-
 #+LATEX:\title{Generic Manuscript Template}
-
+#+LATEX:\thispagestyle{plain}
 #+LATEX:\maketitle
 #+LATEX:\pagenumbering{gobble} % remove page number
 #+LATEX:\newpage
@@ -102,9 +111,11 @@ A sentence or two may be expended on a summary of what we found.
 The last sentence describes the audience of the article.
 :END:
 
+** Nonsense text
 
+Test my patience!
 
-
+#+LATEX:\lipsum[1-10]
 
 
 * Materials and Methods
@@ -112,6 +123,7 @@ The last sentence describes the audience of the article.
 :CUSTOM_ID: sec:methods
 :END:
 ** methods guidance                                                :noexport:
+
 :GUIDANCE:
 This section is a series of subsections that may or may not be in chronological order.
 This section is often placed after the Discussion section.
@@ -229,6 +241,39 @@ Delete all results that do not address the central hypothesis or are less import
 :END:
 
 
+#+LATEX:\lipsum[1-20]
+
+** Nonsense text
+#+LATEX:\lipsum[1-10]
+
+#+LATEX:\begin{singlespace}
+#+LATEX:% Line numbering on and aligned with left margin.
+#+LATEX:\begin{code}{}
+#+LATEX:  \index{openCV!measureSizes}
+#+LATEX:  \label{lst:measureSize}
+#+LATEX:\begin{minted}[frame=lines,
+#+LATEX:               framerule=2pt,
+#+LATEX:               linenos=true,
+#+LATEX:               xleftmargin=\parindent,
+#+LATEX:               breaklines]{python}
+#+LATEX:# import the necessary packages
+#+LATEX:from scipy.spatial import distance as dist
+#+LATEX:from imutils import perspective
+#+LATEX:from imutils import contours
+#+LATEX:import numpy as np
+#+LATEX:import argparse
+#+LATEX:import imutils
+#+LATEX:import cv2
+#+LATEX:
+#+LATEX:def midpoint(ptA, ptB):
+#+LATEX:    return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
+#+LATEX:
+#+LATEX:\end{minted}
+#+LATEX:\caption{Contents of measure.py. \label{lst:measureSize}}
+#+LATEX:\end{code}
+#+LATEX:\end{singlespace}
+#+LaTeX_HEADER:\usepackage{setspace} \doublespacing
+
 * Discussion
 :PROPERTIES:
 :CUSTOM_ID: sec:discussion
@@ -251,6 +296,9 @@ Lay out the topics in declining importance.
 Delete the paragraph with no bearing on the central hypothesis.
 :END:
 
+** Nonsense text
+#+LATEX:\lipsum[1-10]
+
 
 * Acknowledgments
 :PROPERTIES:
@@ -265,12 +313,16 @@ It is easy to make typos in thdese.
 These acknowledgments are critical to the continued support of grants.
 :END:
 
-
+** Bibliography                                                    :noexport:
+** 
 #+Latex:\newpage
 #+print_bibliography:
 
+** List of Tables                                                  :noexport:
+** 
 #+LaTeX:\newpage
 #+LaTeX:\listoftables
+
 
 ** tables guidance                                                 :noexport:
 :GUIDANCE:

@@ -1,4 +1,4 @@
-% Created 2024-08-27 Tue 11:43
+% Created 2024-10-05 Sat 15:59
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
@@ -13,6 +13,18 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
+\usepackage{fancyhdr,lipsum} % conflicts with \pagestyle{myheading}
+\pagestyle{fancy}
+\fancyhf{}% Clear header/footer
+\fancyhead[C]{%
+\ifodd\value{page}\relax
+Generic manuscript template in Org % Odd page header
+\else
+Student, ..., and Mooers % Even page header
+\fi}
+\fancyhead[R]{\thepage} % insert page number on right side of header.
+\renewcommand{\headrulewidth}{1pt} % set to 0pt to hide headrule
+\usepackage{minted}
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{xurl} % permit line breaks in urls
@@ -28,8 +40,6 @@
 \usepackage{authblk}
 \usepackage[labelfont=bf]{caption}
 \DeclareCaptionType{equ}[][]
-%Print page numbers in the upper right corner rather than the bottom center.
-\pagestyle{myheadings}
 % Create a code float environment to enclosed minted environments so that captions can be added to code listings.
 \newenvironment{code}{\captionsetup{type=listing}}{}
 % Approximate Arial font. To save ink by returning to a sans serif font, comment the next two lines.
@@ -37,6 +47,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 \modulolinenumbers[1]
 \setlength{\parindent}{0pt} % Remove automatic indent of paragraphs.
+\usepackage{setspace} \doublespacing
 \date{\today}
 \title{Generic Manuscript Template}
 \hypersetup{
@@ -44,10 +55,10 @@
  pdftitle={Generic Manuscript Template},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 29.3 (Org mode 9.6.15)}, 
+ pdfcreator={Emacs 29.4 (Org mode 9.6.15)}, 
  pdflang={English}}
+\usepackage{natbib}
 \begin{document}
-
 
 \author[1]{Graduate Student}
 \author[2]{Senior Collaborator}
@@ -56,57 +67,102 @@
 \affil[1]{Department of Biochemistry and Molecular Biology, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 \affil[2]{Stephenson Cancer Center, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
 \affil[3]{Laboratory of Biomolecular Structure and Function, University of Oklahoma Health Sciences Center, Oklahoma City, Oklahoma, United States 73104}
-
-
 \title{Generic Manuscript Template}
-
+\thispagestyle{plain}
 \maketitle
 \pagenumbering{gobble} % remove page number
 \newpage
 \pagenumbering{arabic}
 \linenumbers
 
-\section*{Introduction}
-\label{sec:org3015f6a}
 
+\section*{Introduction}
+\label{sec:orgf69db3e}
+\subsection*{Nonsense text}
+\label{sec:orge9ef6cd}
+
+Test my patience!
+
+\lipsum[1-10]
 
 
 \section*{Materials and Methods}
-\label{sec:org2f07cdf}
+\label{sec:org34315d0}
 
 \section*{Results}
-\label{sec:org1c32311}
+\label{sec:org1d94492}
 \subsection*{Most important result}
-\label{sec:orga59b4a2}
+\label{sec:org9f7f54e}
 
 
 \subsection*{Second most important result}
-\label{sec:orgf723858}
+\label{sec:org19f090e}
 
 
 \subsection*{Third most important result}
-\label{sec:orgf82fe1a}
+\label{sec:org9a29dcb}
 
 
 
 \subsection*{Fourth most important result}
-\label{sec:org34b804a}
+\label{sec:orgcbc6d76}
 
 
 
 \subsection*{Fifth most important result}
-\label{sec:orgba67222}
+\label{sec:org24f5c6a}
 
 
 
 \subsection*{Sixth most important result}
-\label{sec:org78b9529}
+\label{sec:org35953aa}
 
+\subsection*{Nonsense text}
+\label{sec:org3914217}
+\lipsum[1-10]
+
+\begin{singlespace}
+% Line numbering on and aligned with left margin.
+\begin{code}{}
+\index{openCV!measureSizes}
+\label{lst:measureSize}
+\begin{minted}[frame=lines,
+framerule=2pt,
+linenos=true,
+xleftmargin=\parindent,
+breaklines]{python}
+# import the necessary packages
+from scipy.spatial import distance as dist
+from imutils import perspective
+from imutils import contours
+import numpy as np
+import argparse
+import imutils
+import cv2
+def midpoint(ptA, ptB):
+return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
+\end{minted}
+\caption{Contents of measure.py. \label{lst:measureSize}}
+\end{code}
+\end{singlespace}
 
 \section*{Discussion}
-\label{sec:org3169457}
+\label{sec:org829f3bb}
+\subsection*{Nonsense text}
+\label{sec:org19410c9}
+\lipsum[1-10]
 
 
 \section*{Acknowledgments}
-\label{sec:orgd08987f}
+\label{sec:orgb3464e4}
+\subsection*{}
+\label{sec:org5373475}
+\newpage
+\bibliographystyle{cell}
+\bibliography{/Users/blaine/Documents/global}
+
+\subsection*{}
+\label{sec:org9a6984a}
+\newpage
+\listoftables
 \end{document}
