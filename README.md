@@ -1,4 +1,4 @@
-![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.8&color=brightcolor)
+![Version](https://img.shields.io/static/v1?label=manuscriptInOrg&message=0.7.1&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
@@ -55,24 +55,13 @@ See the [org-mode manual](https://orgmode.org/manual/).
 - Comments are now in GUIDANCE drawers that can be closed with `Shift-TAB` in org-mode to reduce clutter. The contents of these drawers are not printed on export to PDF. 
 - Running tiles to ease tracking printed copies.
 
-## Configuration
-
-Avoid running `C-c C-e l o` twice to get changes in the org file to appear in the PDF.
-
-```org
-(require 'ox-latex)
-(setq org-latex-pdf-process
-      '("pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f"
-        "pdflatex -interaction nonstopmode -shell-escape -output-directory %o %f"))
-```
-
 ## Installation
 
 1. Git clone the repo `git clone https://github.com/MooersLab/manuscriptInOrg.git`.
 2. Copy main.org to your project folder.
-3. Load `main.org` file in Emacs via the File pulldown menu or `C-x C-f`.
+3. Load main.org file in Emacs via the File pulldown menu or `C-x C-f`.
 4. Edit the file to customize to your manuscript.
-5. Edit the paths to your `global.bib` file and your image files.
+5. Edit the paths to your global.bib file and your image files.
 6. Enter `C-c C-e l o` to compile and open the resulting PDF in your default PDF viewer.
 
 Compiling takes several seconds on a 2018 MacBook Pro with 32 GB of RAM. 
@@ -86,13 +75,19 @@ The PDF will open in your default PDF viewer.
 
 1. LaTeX is installed with all of the required style files. However, my installation was missing the **break cities.sty** file. I installed this with the `sudo port install texlive-bibtex-extra` command.
 2. You will use the LaTeX cite command and let LaTeX handle the generation of the literature cited section. This package *citar*, *helm-bibtex*, *ivy-bibtex*, or the like can help find the right citekey from inside Emacs.
-3. You can edit org-mode files in other text editors. Many text editors support syntax highlighting for org-mode. VS Code has a package that provides additional support. To get the most out of utilizing org-mode, it is best to utilize it inside Emacs. Org-mode is now built into GNU Emacs. You can utilize org-mode without configuration of the `init.el` file. You can achieve the same effect by starting your current Emacs with the `-Q` flag, which skips reading your `init.el` file. The editing and building of a `init.el` file to extend the features of Emacs can be an activity trap. Frustration associated with errors late during the editing of this file led to Emacs having a reputation for being difficult to master.
+3. You can edit org-mode files in other text editors. Many text editors support syntax highlighting for org-mode. VS Code has a package that provides additional support. To get the most out of utilizing org-mode, it is best to utilize it inside of Emacs. Org-mode is now built into GNU Emacs. You can utilize org-mode without any configuration of the `init.el` file. You can achieve the same effect by starting your current Emacs with the `-Q` flag, which skips reading your `init.el` file. The editing and building of a `init.el` file to extend the features of Emacs can be an activity trap. Frustration associated with errors late during the editing of this file led to Emacs having a reputation for being difficult to master.
 
 ## Postscript Oct 10, 2022
 My approach was developed independently of another [solution](https://github.com/fangohr/template-latex-paper-from-orgmode/issues/4) found here. 
 
 ## Postscript May 16, 2023
 I had upgraded my operating system to Ventura, but I had not properly migrated my MacPorts. I found that I was missing the breakcities.sty file.
+
+## Postscript October 11, 2024
+
+I often print manuscirpts before traveling to edit them while airborne.
+The papers tend to get mixed up between projects.
+I added a header that clarifyting which project a page belongs to.
 
 ## Related sites
 
@@ -118,16 +113,15 @@ Note that [latex-emacs profile](https://github.com/MooersLab/latex-emacs) has fu
 
 ## Update history
 
-|Version      | Changes                                                                                                 | Date           |
-|:------------|:--------------------------------------------------------------------------------------------------------|:---------------|
-| Version 0.2 |  Added badges, funding, and update table.                                                               | 2024 May 21    |
-| Version 0.3 |  Updated main.org so it can compile without configuration from an init.el file.                         | 2024 August 18 |
-| Version 0.4 |  Fixed issues with preamble. Put comments in drawers.                                                   | 2024 August 22 |
-| Version 0.5 |  Put preamble in a drawer.                                                                              | 2024 August 26 |
-| Version 0.6 |  Put GUIDANCE drawers under subheadings with noexport tag.                                              | 2024 August 26 |
-| Version 0.7 |  Add urlx package to allow linebreaks in urls.                                                          | 2024 August 27 |
-| Version 0.8 |  Added configuration for running titles.                                                                | 2024 October 5 |    
-
+|Version      | Changes                                                                                                                                                   | Date                        |
+|:-----------|:------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------|
+| Version 0.2 |   Added badges, funding, and update table.                                                                                            | 2024 May 21          |
+| Version 0.3 |   Updated main.org so it can compile without configuration from an init.el file.                                       | 2024 August 18      |
+| Version 0.4 |   Fixed issues with preamble. Put comments in drawers.                                                                       | 2024 August 22       |
+| Version 0.5 |   Put preamble in a drawer.                                                                                                                     | 2024 August 26       |
+| Version 0.6 |   Put GUIDANCE drawers under subheadings with noexport tag.                                                         | 2024 August 26        |
+| Version 0.7 |  Add urlx package to allow linebreaks in urls.                                                                                        | 2024 August 27        |
+| Version 0.7.1 | Added short author list, running title, and page of N pages format to header                                    | 2024 October 11       |
 ## Sources of funding
 
 - NIH: R01 CA242845

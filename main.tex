@@ -1,4 +1,4 @@
-% Created 2024-10-05 Sat 15:59
+% Created 2024-10-11 Fri 12:32
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt,letterpaper]{article}
 \usepackage[utf8]{inputenc}
@@ -15,14 +15,11 @@
 \usepackage[letterpaper, total={6.75in, 9in}]{geometry} % good with line numbers
 \usepackage{fancyhdr,lipsum} % conflicts with \pagestyle{myheading}
 \pagestyle{fancy}
+\usepackage{lastpage}
 \fancyhf{}% Clear header/footer
-\fancyhead[C]{%
-\ifodd\value{page}\relax
-Generic manuscript template in Org % Odd page header
-\else
-Student, ..., and Mooers % Even page header
-\fi}
-\fancyhead[R]{\thepage} % insert page number on right side of header.
+\fancyhead[L]{Student, ..., and Mooers}
+\fancyhead[C]{Manuscript template in Org}
+\fancyhead[R]{\thepage\ / \pageref{LastPage}}
 \renewcommand{\headrulewidth}{1pt} % set to 0pt to hide headrule
 \usepackage{minted}
 \usepackage{booktabs}
@@ -77,9 +74,9 @@ Student, ..., and Mooers % Even page header
 
 
 \section*{Introduction}
-\label{sec:orgf69db3e}
+\label{sec:orgb85413a}
 \subsection*{Nonsense text}
-\label{sec:orge9ef6cd}
+\label{sec:orga2dfe9f}
 
 Test my patience!
 
@@ -87,38 +84,38 @@ Test my patience!
 
 
 \section*{Materials and Methods}
-\label{sec:org34315d0}
+\label{sec:orgd1cb652}
 
 \section*{Results}
-\label{sec:org1d94492}
+\label{sec:orge50933c}
 \subsection*{Most important result}
-\label{sec:org9f7f54e}
+\label{sec:orgb147343}
 
 
 \subsection*{Second most important result}
-\label{sec:org19f090e}
+\label{sec:orgbab96ee}
 
 
 \subsection*{Third most important result}
-\label{sec:org9a29dcb}
+\label{sec:org8af1abe}
 
 
 
 \subsection*{Fourth most important result}
-\label{sec:orgcbc6d76}
+\label{sec:orgb21e5cf}
 
 
 
 \subsection*{Fifth most important result}
-\label{sec:org24f5c6a}
+\label{sec:org9cd4340}
 
 
 
 \subsection*{Sixth most important result}
-\label{sec:org35953aa}
+\label{sec:org8ace0bc}
 
 \subsection*{Nonsense text}
-\label{sec:org3914217}
+\label{sec:org0e4b273}
 \lipsum[1-10]
 
 \begin{singlespace}
@@ -140,29 +137,29 @@ import argparse
 import imutils
 import cv2
 def midpoint(ptA, ptB):
-return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
+return ((ptA[0] + ptB[0o]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
 \end{minted}
 \caption{Contents of measure.py. \label{lst:measureSize}}
 \end{code}
 \end{singlespace}
 
 \section*{Discussion}
-\label{sec:org829f3bb}
+\label{sec:org11bc26e}
 \subsection*{Nonsense text}
-\label{sec:org19410c9}
+\label{sec:org5518a2c}
 \lipsum[1-10]
 
 
 \section*{Acknowledgments}
-\label{sec:orgb3464e4}
+\label{sec:orge820224}
 \subsection*{}
-\label{sec:org5373475}
+\label{sec:org8e47bfd}
 \newpage
 \bibliographystyle{cell}
 \bibliography{/Users/blaine/Documents/global}
 
 \subsection*{}
-\label{sec:org9a6984a}
+\label{sec:org282371a}
 \newpage
 \listoftables
 \end{document}
