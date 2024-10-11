@@ -42,8 +42,8 @@ See the [org-mode manual](https://orgmode.org/manual/).
 ## Default Features
 
 - Line numbers.
-- Block paragraphs. Reset the indent on the line `\setlength{\parindent}{0pt} `  if you indents.
-- No numbering of the sections. This is suppressed in a org-mode setting in the header (i.e., num:\nil). Remove this setting to apply section numbering.
+- Block paragraphs. Reset the indent on the line `\setlength{\parindent}{0pt} ` if you want indented first sentences.
+- No numbering of the sections. This is suppressed in an org-mode setting in the header (i.e., num:\nil). Remove this setting to apply section numbering.
 - Blank lines between paragraphs. This is set by the line `\usepackage{parskip}` in the preamble.
 - Narrow margins to conserve paper in drafts. Edit the line `\usepackage[letterpaper, total={6.75in, 9in}]{geometry}` to change the margin width.
 - Single-spaced abstract.
@@ -52,17 +52,17 @@ See the [org-mode manual](https://orgmode.org/manual/).
 - Helvetica font.
 - Page numbers in the upper right-hand corner.
 - No page number on the first page.
-- The LaTeX header is in a drawer so you do not have to look at it when working in Emacs.
-- Comments are now in GUIDANCE drawers that can be closed with `Shift-TAB` in org-mode to reduce clutter. The contents of these drawers are not printed on export to PDF. 
-- Running tiles to ease tracking printed copies.
+- The LaTeX preamble is in a drawer so you do not have to look at it when working in Emacs.
+- Comments are now in GUIDANCE drawers that can be closed with `Shift-TAB` in org-mode to reduce clutter. The contents of these drawers are not printed on export to PDF. You may want to delete them after duplicating the template.
+- Running title eases handling printed versions when traveling with several manuscripts that are being edited in parallel. The left side has the first and last author. The center has a running title (you set this in the preamble). The right side has a page number in 1/N format. 
 
 ## Installation
 
 1. Git clone the repo `git clone https://github.com/MooersLab/manuscriptInOrg.git`.
 2. Copy main.org to your project folder.
-3. Load main.org file in Emacs via the File pulldown menu or `C-x C-f`.
+3. Load `main.org` file in Emacs via the File pulldown menu or `C-x C-f`.
 4. Edit the file to customize to your manuscript.
-5. Edit the paths to your global.bib file and your image files.
+5. Edit the paths to your `global.bib` file and your image files.
 6. Enter `C-c C-e l o` to compile and open the resulting PDF in your default PDF viewer.
 
 Compiling takes several seconds on a 2018 MacBook Pro with 32 GB of RAM. 
@@ -76,7 +76,7 @@ The PDF will open in your default PDF viewer.
 
 1. LaTeX is installed with all of the required style files. However, my installation was missing the **break cities.sty** file. I installed this with the `sudo port install texlive-bibtex-extra` command.
 2. You will use the LaTeX cite command and let LaTeX handle the generation of the literature cited section. This package *citar*, *helm-bibtex*, *ivy-bibtex*, or the like can help find the right citekey from inside Emacs.
-3. You can edit org-mode files in other text editors. Many text editors support syntax highlighting for org-mode. VS Code has a package that provides additional support. To get the most out of utilizing org-mode, it is best to utilize it inside of Emacs. Org-mode is now built into GNU Emacs. You can utilize org-mode without any configuration of the `init.el` file. You can achieve the same effect by starting your current Emacs with the `-Q` flag, which skips reading your `init.el` file. The editing and building of a `init.el` file to extend the features of Emacs can be an activity trap. Frustration associated with errors late during the editing of this file led to Emacs having a reputation for being difficult to master.
+3. You can edit org-mode files in other text editors. Many text editors support syntax highlighting for org-mode. VS Code has a package that provides additional support. To get the most out of utilizing org-mode, it is best to utilize it inside of Emacs. Org-mode is now built into GNU Emacs. You can utilize org-mode without configuring the `init.el` file. You can achieve the same effect by starting your current Emacs with the `-Q` flag, which skips reading your `init.el` file. The editing and building of an `init.el` file to extend the features of Emacs can be an activity trap. Frustration associated with errors late during the editing of this file led to Emacs having a reputation for being difficult to master.
 
 ## Postscript Oct 10, 2022
 My approach was developed independently of another [solution](https://github.com/fangohr/template-latex-paper-from-orgmode/issues/4) found here. 
@@ -86,9 +86,9 @@ I had upgraded my operating system to Ventura, but I had not properly migrated m
 
 ## Postscript October 11, 2024
 
-I often print manuscirpts before traveling to edit them while airborne.
+I often print manuscripts before traveling to edit them while airborne.
 The papers tend to get mixed up between projects.
-I added a header that clarifyting which project a page belongs to.
+I added a header that clarifies which project a page belongs to.
 
 ## Related sites
 
