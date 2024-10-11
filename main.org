@@ -69,8 +69,11 @@
 #+LATEX:\linenumbers
 :END:
 
-
-** abtract guidance                                                :noexport:
+#+LATEX:\section*{Abstract}
+#+LATEX:\begin{singlespace}
+#+LATEX:\lipsum[1]
+#+LATEX:\end{singlespace}
+** abstract guidance                                               :noexport:
 :GUIDANCE:
 I draft the abstract after defining the scope of the paper with the Introduction and outlining the key results in the Results section and maybe the Discussion section.
 I usually rewrite the abstract after the first draft is finished.
@@ -78,28 +81,23 @@ The abstract is often single-spaced.
 I enclosed the abstract in the *singlespace* environment.
 :END:
 
-#+LATEX:\begin{singlespace}
-#+LATEX:\section*{Abstract}
-
-
-#+LATEX:\end{singlespace}
 
 ** keyword guidance                                                :noexport:
 :GUIDANCE:
 The paragraph enviornment in LaTeX does not have a native analog in org.
 However, org will implement the paragraph command on export to PDF.
 :END:
-
+** 
 \paragraph{ Keywords:} I draft the keywords in the writing document and select the best up to the allowable limit.
-
 \paragraph{Abbreviations:} GUI: graphical user interface, IDE: integrated development environment
-
 
 
 * Introduction
 :PROPERTIES:
 :CUSTOM_ID: sec:introduction
 :END:
+#+LATEX:\lipsum[1-10]
+
 ** introduction guidance                                           :noexport:
 :GUIDNACE:
 The Introduction is not a literature review.
@@ -116,12 +114,6 @@ This is followed by a summary of our approach.
 A sentence or two may be expended on a summary of what we found.
 The last sentence describes the audience of the article.
 :END:
-
-** Nonsense text
-
-Test my patience!
-
-#+LATEX:\lipsum[1-10]
 
 
 * Materials and Methods
@@ -272,7 +264,7 @@ Delete all results that do not address the central hypothesis or are less import
 #+LATEX:import cv2
 #+LATEX:
 #+LATEX:def midpoint(ptA, ptB):
-#+LATEX:    return ((ptA[0] + ptB[0]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
+#+LATEX:    return ((ptA[0] + ptB[0o]) * 0.5, (ptA[1] + ptB[1]) * 0.5)
 #+LATEX:
 #+LATEX:\end{minted}
 #+LATEX:\caption{Contents of measure.py. \label{lst:measureSize}}
