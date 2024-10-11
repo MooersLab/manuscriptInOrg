@@ -35,7 +35,8 @@ See the [org-mode manual](https://orgmode.org/manual/).
 
 ## Sample second page
 
-![Screenshot 2024-08-22 at 4 00 55 PM](https://github.com/user-attachments/assets/843aa28e-97ee-4a96-b151-1069e725d1c3)
+![Screenshot 2024-10-11 at 1 14 19 PM](https://github.com/user-attachments/assets/126466ab-05cb-4150-af5a-fc33f16c9a3c)
+
 
 
 ## Default Features
