@@ -18,14 +18,15 @@
 #+LaTeX_HEADER:\fancyhead[R]{\thepage\ / \pageref{LastPage}} 
 #+LaTeX_HEADER:\renewcommand{\headrulewidth}{1pt} % set to 0pt to hide headrule
 
-# #+LaTeX_HEADER:\fancyhead[C]{%
-# #+LaTeX_HEADER:  \ifodd\value{page}\relax
-# #+LaTeX_HEADER:    Generic manuscript template in Org % Odd page header
-# #+LaTeX_HEADER:  \else
-# #+LaTeX_HEADER:    Student, ..., and Mooers % Even page header
-# #+LaTeX_HEADER:  \fi}
-# #+LaTeX_HEADER:\fancyhead[R]{\thepage} % insert page number on right side of header. 
-
+#+LaTeX_HEADER:%Print page numbers in the upper right corner rather than the bottom center.
+#+LaTeX_HEADER:\pagestyle{myheadings}
+#+LaTeX_HEADER:\usepackage{lastpage}
+#+LaTeX_HEADER:\usepackage{fancyhdr}
+#+LaTeX_HEADER:\pagestyle{fancy}
+#+LaTeX_HEADER:\fancyhf{} % Clear all header and footer fields
+#+LaTeX_HEADER:\fancyhead[L]{\today}
+#+LaTeX_HEADER:\fancyhead[C]{man????} % Center header
+#+LaTeX_HEADER:\fancyhead[R]{\thepage\ / \pageref{LastPage}}
 
 #+LaTeX_HEADER:\usepackage{minted}
 #+LaTeX_HEADER:\usepackage{booktabs}
