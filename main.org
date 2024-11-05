@@ -35,7 +35,7 @@
 #+LaTeX_HEADER:\usepackage{hyperref,lineno}
 #+LaTeX_HEADER:\usepackage{datetime2}
 #+LaTeX_HEADER:\usepackage{amsmath,amssymb,amsfonts}
-#+LaTeX_HEADER:\usepackage{breakcites} % allow citatation to wrap
+#+LaTeX_HEADER:\usepackage{breakcites} % allow citation to wrap
 
 #+LaTeX_HEADER:\usepackage[utf8]{inputenc}
 #+LaTeX_HEADER:\usepackage{setspace} \doublespacing
