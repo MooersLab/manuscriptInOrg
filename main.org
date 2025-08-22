@@ -17,11 +17,12 @@
 #+LaTeX_HEADER: \usepackage{minted}
 #+LaTeX_HEADER: \usepackage{booktabs}
 #+LaTeX_HEADER: \usepackage{graphicx}
+#+LaTeX_HEADER: \usepackage{url} % precedes hyperref
 #+LaTeX_HEADER: \usepackage{xurl} % permit line breaks in urls
 #+LaTeX_HEADER: \usepackage{hyperref,lineno}
 #+LaTeX_HEADER: \usepackage{datetime2}
 #+LaTeX_HEADER: \usepackage{amsmath,amssymb,amsfonts}
-#+LaTeX_HEADER: \usepackage{breakcites} % allow citation to wrap
+# #+LaTeX_HEADER: \usepackage{breakcites} % allow citation to wrap
 #+LaTeX_HEADER: \usepackage[utf8]{inputenc}
 #+LaTeX_HEADER: \usepackage{setspace}
 #+LaTeX_HEADER: \usepackage{parskip}
